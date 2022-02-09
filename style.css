@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
+    font-family: Roboto;
     width: 100%;
     height: 100%;
     background-image: url("img/backgorund.jpg");
@@ -102,4 +105,117 @@ h3 {
 .all-pizzas {
     width: 400px;
     height: 200px;
+}
+
+#body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1000px rgba(0,0,0,0.5);
+}
+
+#content form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+    width: 60rem;
+}
+
+#information{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#order-info{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: -1rem;
+}
+
+#order-info input{
+    display: flex;
+    font-family: Roboto;
+    width: 20rem;
+    height: 2rem;
+    padding-left: 2rem;
+    border-radius: 20px;
+    border: 2px solid rgb(30, 30, 30);
+}
+
+#information input:hover{
+    border: 2px solid rgb(150, 150, 150);
+}
+
+#information input:focus{
+    outline: none;
+    border: 2px solid rgb(40, 130, 10);
+}
+
+#additional-info-container{
+    display: flex;
+    flex-direction: column;
+    width: 20.3rem;
+}
+
+#additional-info{
+    font-family: Roboto;
+    width: 100%;
+    border-radius: 15px;
+    padding-left: 1.5rem;
+    padding-top: 10px;
+    margin-left: -0.9rem;
+    border: 2px solid rgb(30, 30, 30);
+}
+
+#additional-info:hover{
+    border: 2px solid rgb(150, 150, 150);
+}
+
+#additional-info:focus{
+    border: 2px solid rgb(40, 130, 10);
+    outline: none;
+}
+
+#additional-info-description{
+    font-size: 0.9rem;
+    color: gray;
+}
+
+#cart{
+    width: 50%;
+    height: 100%;
+}
+
+#information h1{
+    font-size: 1rem;
+    width: 20rem;
+}
+
+#call-container{
+    align-self: flex-start;
+    padding-left: 5rem;
+    margin-bottom: -1rem;
+}
+
+#sms-container{
+    align-self: flex-start;
+    padding-left: 5rem;
+    margin-bottom: 2rem;
+}
+
+.call-or-sms{
+    width: 10px;
+    height: 10px;
 }

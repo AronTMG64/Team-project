@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizza</title>
+</head>
+<body id="body">
+    <main id="content">
+        <form action="">
+            <div id="information">
+                <div id="order-info">
+                    <input required id="name" placeholder="Name" type="text">
+                    <input required id="address" placeholder="Adress" type="text">
+                    <input required id="phone-number" placeholder="Phone number" type="number">
+                    <input id="cupon-code" placeholder="Cupon code" type="text">
+                </div>
+                <div id="additional-info-container">
+                    <textarea name="info" id="additional-info" cols="30" rows="5" placeholder="Additional info"></textarea>
+                    <label id="additional-info-description" for="info">ex. doorcode, house number, house floor</label>
+                </div>
+                <h1>Do you want us to call you or send a message when the pizza has arrived</h1>
+                <div id="call-container">
+                    <input id="call" required type="radio" name="call-or-sms" class="call-or-sms">
+                    <label for="call-or-sms">Call</label>
+                </div>
+                <div id="sms-container">
+                    <input id="sms" required type="radio" name="call-or-sms" class="call-or-sms">
+                    <label for="call-or-sms">SMS</label>
+                </div>
+            </div>
+            <div id="cart">
+
+                <button type="submit" href="/index.html">Order</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
