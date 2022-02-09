@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-    
+<body id="body">
+    <main id="content">
+        <div id="information">
+            <input required id="name" placeholder="Name" type="text">
+            <input required id="address" placeholder="Adress" type="text">
+            <input required id="phone-number" placeholder="Phone number" type="number">
+            <input required id="cupon-code" placeholder="Cupon code" type="text">
+            <div id="additional-info-container">
+                <input id="additional-info" placeholder="Additional info" name="info" type="text">
+                <label id="additional-info-description" for="info">ex. doorcode, house number, house floor</label>
+            </div>
+            <div>
+                <input type="radio" name="call-or-sms" class="call-or-sms">
+                <label for="call-or-sms">Call</label>
+            </div>
+            <div>
+                <input type="radio" name="call-or-sms" class="call-or-sms">
+                <label for="call-or-sms">SMS</label>
+            </div>
+        </div>
+        <div id="cart">
+            
+            <button>Order</button>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
