@@ -43,7 +43,7 @@ body {
     justify-content: space-evenly;
 }
 
-#info{
+#order-info{
     height: 20rem;
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@ body {
     margin-bottom: -1rem;
 }
 
-#info input{
+#order-info input{
     display: flex;
     font-family: Roboto;
     width: 20rem;
