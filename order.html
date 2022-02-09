@@ -10,19 +10,22 @@
 <body id="body">
     <main id="content">
         <div id="information">
-            <input required id="name" placeholder="Name" type="text">
-            <input required id="address" placeholder="Adress" type="text">
-            <input required id="phone-number" placeholder="Phone number" type="number">
-            <input required id="cupon-code" placeholder="Cupon code" type="text">
+            <div id="info">
+                <input required id="name" placeholder="Name" type="text">
+                <input required id="address" placeholder="Adress" type="text">
+                <input required id="phone-number" placeholder="Phone number" type="number">
+                <input required id="cupon-code" placeholder="Cupon code" type="text">
+            </div>
             <div id="additional-info-container">
                 <textarea name="info" id="additional-info" cols="30" rows="5" placeholder="Additional info"></textarea>
                 <label id="additional-info-description" for="info">ex. doorcode, house number, house floor</label>
             </div>
-            <div>
+            <h1>Do you want us to call you or send a message when the pizza has arrived</h1>
+            <div id="call">
                 <input type="radio" name="call-or-sms" class="call-or-sms">
                 <label for="call-or-sms">Call</label>
             </div>
-            <div>
+            <div id="sms">
                 <input type="radio" name="call-or-sms" class="call-or-sms">
                 <label for="call-or-sms">SMS</label>
             </div>
