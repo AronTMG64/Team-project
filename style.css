@@ -45,7 +45,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-bottom: -2.2rem;
+    margin-bottom: -1rem;
 }
 
 #info input{
