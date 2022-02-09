@@ -22,18 +22,18 @@
                     <label id="additional-info-description" for="info">ex. doorcode, house number, house floor</label>
                 </div>
                 <h1>Do you want us to call you or send a message when the pizza has arrived</h1>
-                <div id="call">
-                    <input type="radio" name="call-or-sms" class="call-or-sms">
+                <div id="call-container">
+                    <input id="call" required type="radio" name="call-or-sms" class="call-or-sms">
                     <label for="call-or-sms">Call</label>
                 </div>
-                <div id="sms">
-                    <input type="radio" name="call-or-sms" class="call-or-sms">
+                <div id="sms-container">
+                    <input id="sms" required type="radio" name="call-or-sms" class="call-or-sms">
                     <label for="call-or-sms">SMS</label>
                 </div>
             </div>
             <div id="cart">
 
-                <button type="submit">Order</button>
+                <button type="submit" href="/index.html">Order</button>
             </div>
         </form>
     </main>
