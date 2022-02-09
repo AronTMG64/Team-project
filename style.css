@@ -10,3 +10,56 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 40rem;
+    width: 60rem;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1000px rgba(0,0,0,0.5);
+}
+
+#information{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#information input{
+    width: 20rem;
+    height: 2rem;
+    padding-left: 2rem;
+    border-radius: 20px;
+    border: 2px solid rgb(30, 30, 30);
+}
+
+#information input:hover{
+    border: 2px solid rgb(150, 150, 150);
+}
+
+#information input:focus{
+    outline: none;
+    border: 2px solid rgb(40, 130, 10);
+}
+
+#additional-info-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#cart{
+    width: 50%;
+    height: 100%;
+}
