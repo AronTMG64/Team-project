@@ -94,6 +94,7 @@ h1 {
 }
 
 .pizzas {
+    user-select: none;
     width: 500px;
     height: 400px;
     border: black solid 2px;
@@ -115,6 +116,7 @@ h3 {
 }
 
 #body{
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
