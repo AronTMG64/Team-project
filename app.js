@@ -1,4 +1,4 @@
-localStorage.getItem('pepperoniPrice')
+
 localStorage.getItem('hawaiiPrice')
 localStorage.getItem('vesuvioPrice')
 localStorage.getItem('margheritaPrice')
@@ -20,25 +20,29 @@ let totalPriceValue = 0;
 
 
 pepperoni.addEventListener('click', () => {
-    totalPriceValue += pepperoniPrice;
-    totalPrice.innerText = totalPriceValue;
-    localStorage.setItem('pepperoniPrice', pepperoniPrice)
+    totalPriceValue += parseFloat(pepperoniPrice);
+    localStorage.setItem('pepperoniPrice', Math.round(totalPriceValue * 100) / 100)
+    console.log(Math.round(totalPriceValue * 100) / 100);
+    let getPepperoniPrice = localStorage.getItem('pepperoniPrice')
+    console.log(parseFloat(getPepperoniPrice));
+    totalPrice.innerHTML += getPepperoniPrice
+
 })
 
 hawaii.addEventListener('click', () => {
-    totalPriceValue += hawaiiPrice;
-    totalPrice.innerText = totalPriceValue;
-    localStorage.setItem('hawaiiPrice', hawaiiPrice)
+    totalPriceValue += parseFloat(hawaiiPrice);
+    localStorage.setItem('hawaiiPrice', Math.round(hawaiiPrice * 100) / 100)
+    console.log(Math.round(totalPriceValue * 100) / 100);
 })
 
 vesuvio.addEventListener('click', () => {
-    totalPriceValue += vesuvioPrice;
-    totalPrice.innerText = totalPriceValue;
+    totalPriceValue += parseFloat(vesuvioPrice);
     localStorage.setItem('vesuvioPrice', vesuvioPrice)
+    console.log(Math.round(totalPriceValue * 100) / 100);
 })
 
 margherita.addEventListener('click', () => {
-    totalPriceValue += margheritaPrice;
-    totalPrice.innerText = totalPriceValue;
+    totalPriceValue += parseFloat(margheritaPrice);
     localStorage.setItem('margheritaPrice', margheritaPrice)
+    console.log(Math.round(totalPriceValue * 100) / 100);
 })
